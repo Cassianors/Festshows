@@ -85,7 +85,6 @@ public class Lojavirtual {
 		System.out.println("(1)Coxinha - R$:6,00 ");
 		System.out.println("(2)Pastel - R$:5,25 ");
 		System.out.println("(3)Não Quero - R$:0,00 ");
-
 		escolhaComida = scanner.nextInt();
 		/*
 		 * Na linha 91 evocamos a variavel escolhaComida para que possamos a partir da
