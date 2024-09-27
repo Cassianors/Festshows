@@ -90,6 +90,7 @@ public class Lojavirtual {
 		 * Na linha 91 evocamos a variavel escolhaComida para que possamos a partir da
 		 * classe scanner, possamos atribuir um valor a essa variavel
 		 */
+		
 		if (escolhaComida == 1) {
 			System.out.println("Você escolheu Coxinha - R$:6,00");
 			total += 6.00;
