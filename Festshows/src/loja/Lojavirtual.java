@@ -7,13 +7,13 @@ public class Lojavirtual {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		/* Na linha 7 atribuimos um nome para invocarmos a classe Scanner */
+		/* Na linha 9 atribuimos um nome para invocarmos a classe Scanner */
 		System.out.println(" Olá, bem vindo(a) ao Festshows. ");
 
 		System.out.println("Digite caso queira prosseguir digite (1):");
 		String resposta = scanner.nextLine();
 		/*
-		 * Na linha 14 Criamos uma variavel que que ira ser criada ao ser inserido um
+		 * Nas linhas 14 Criamos uma variavel que que ira ser criada ao ser inserido um
 		 * valor, apartir da classe que criamos(Scanner)
 		 */
 		if (resposta.equals("1")) {
@@ -24,7 +24,7 @@ public class Lojavirtual {
 			System.exit(0);
 		}
 		/*
-		 * Criamos um condição se/senão para escolher uma resposta do usuario, criando a
+		 * Nas linhas 19 a 25 criamos um condição se/senão para escolher uma resposta do usuario, criando a
 		 * condição de se o usuario quiser acessar ele vai digitar um valor valido(1),
 		 * qualquer valor diferente o sistema reconhecera como invalido e ira sair.
 		 * OBS:Ao usar o Equals nos fazemos uma comparação vamos comparar uma variavel
@@ -48,7 +48,7 @@ public class Lojavirtual {
 		double total = 0;
 
 		/*
-		 * Nas linhas 44 à 51 nós declaramos variaveis e atribuimos valores igual a zero
+		 * Nas linhas 44 à 48 nós declaramos variaveis e atribuimos valores igual a zero
 		 * para que pudessemos preencher esses valores mais tarde com valores inteiros
 		 */
 
@@ -59,7 +59,7 @@ public class Lojavirtual {
 
 		escolhaShow = scanner.nextInt();
 		/*
-		 * Na linha 62 evocamos a variavel escolhaShow e iremos atribuir um valor
+		 * Na linha 60 evocamos a variavel escolhaShow e iremos atribuir um valor
 		 * digitado a partir da classe scanner que criamos, atribuindo assim um valor
 		 * digitado pelo usuario
 		 */
@@ -76,7 +76,7 @@ public class Lojavirtual {
 			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 3.");
 		}
 		/*
-		 * Nas linhas 68 a 79 foi criado uma condição if/else/if/else para que possamos
+		 * Nas linhas 66 a 77 foi criado uma condição if/else/if/else para que possamos
 		 * trabalhar com mais opções de condição e ao final evocamos a variavel "total"
 		 * para que seja acrescentada a ela "valor" atribuido
 		 */
@@ -87,7 +87,7 @@ public class Lojavirtual {
 		System.out.println("(3)Não Quero - R$:0,00 ");
 		escolhaComida = scanner.nextInt();
 		/*
-		 * Na linha 91 evocamos a variavel escolhaComida para que possamos a partir da
+		 * Na linha 88 evocamos a variavel escolhaComida para que possamos a partir da
 		 * classe scanner, possamos atribuir um valor a essa variavel
 		 */
 
@@ -104,7 +104,7 @@ public class Lojavirtual {
 			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 3.");
 		}
 		/*
-		 * Nas linhas 96 a 107 foi criado uma condição if/else/if/else para que possamos
+		 * Nas linhas 94 a 105 foi criado uma condição if/else/if/else para que possamos
 		 * trabalhar com mais opções de condição e ao final evocamos a variavel "total"
 		 * para que seja acrescentada a ela "valor" atribuido
 		 */
@@ -117,7 +117,7 @@ public class Lojavirtual {
 
 		escolhaBebida = scanner.nextInt();
 		/*
-		 * Na linha evocamos a variavel escolhaBebida para que possamos a partir da
+		 * Na linha 118 evocamos a variavel escolhaBebida para que possamos a partir da
 		 * classe scanner, possamos atribuir um valor a essa variavel
 		 */
 		if (escolhaBebida == 1) {
@@ -136,7 +136,7 @@ public class Lojavirtual {
 			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 4.");
 		}
 		/*
-		 * Nas linhas 96 a 107 foi criado uma condição if/else/if/else para que possamos
+		 * Nas linhas 123 a 137 foi criado uma condição if/else/if/else para que possamos
 		 * trabalhar com mais opções de condição e ao final evocamos a variavel "total"
 		 * para que seja acrescentada a ela "valor" atribuido
 		 */
@@ -148,7 +148,7 @@ public class Lojavirtual {
 
 		nota = scanner.nextInt();
 		/*
-		 * Na linha 147 evocamos a variavel nota para que possamos a partir da classe
+		 * Na linha 149 evocamos a variavel nota para que possamos a partir da classe
 		 * scanner, possamos atribuir um valor a essa variavel
 		 */
 		switch (nota) {
@@ -168,7 +168,7 @@ public class Lojavirtual {
 			System.out.println("Erro: Opção inválida.");
 			return;
 		/*
-		 * Na linha 152 criamos a condicional switch, que possibilita a criação de
+		 * Nas linhas 154 a 169 criamos a condicional switch, que possibilita a criação de
 		 * infinitos "casos" de maneira mais para que o sistema imprima as notas de
 		 * acordo com o caso escolhido pelo cliente
 		 */
