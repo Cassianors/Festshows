@@ -47,9 +47,6 @@ public class Lojavirtual {
 		int nota = 0;
 		double total = 0;
 
-		double precoShow = 0;
-		double precoComida = 0;
-		double precoBebida = 0;
 		/*
 		 * Nas linhas 44 à 51 nós declaramos variaveis e atribuimos valores igual a zero
 		 * para que pudessemos preencher esses valores mais tarde com valores inteiros
