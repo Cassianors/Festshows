@@ -90,7 +90,7 @@ public class Lojavirtual {
 		 * Na linha 91 evocamos a variavel escolhaComida para que possamos a partir da
 		 * classe scanner, possamos atribuir um valor a essa variavel
 		 */
-		
+
 		if (escolhaComida == 1) {
 			System.out.println("Você escolheu Coxinha - R$:6,00");
 			total += 6.00;
@@ -117,7 +117,7 @@ public class Lojavirtual {
 
 		escolhaBebida = scanner.nextInt();
 		/*
-		 * Na linha  evocamos a variavel escolhaBebida para que possamos a partir da
+		 * Na linha evocamos a variavel escolhaBebida para que possamos a partir da
 		 * classe scanner, possamos atribuir um valor a essa variavel
 		 */
 		if (escolhaBebida == 1) {
@@ -129,11 +129,11 @@ public class Lojavirtual {
 		} else if (escolhaBebida == 3) {
 			System.out.println("Você escolheu Agua 250ml R$:3,25");
 			total += 3.25;
-		} else if(escolhaBebida == 4){
+		} else if (escolhaBebida == 4) {
 			System.out.println("Você não quer beber.");
-			total += 3.25;
-		}else {
-			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 3.");
+			total += 0.0;
+		} else {
+			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 4.");
 		}
 		/*
 		 * Nas linhas 96 a 107 foi criado uma condição if/else/if/else para que possamos
@@ -141,24 +141,40 @@ public class Lojavirtual {
 		 * para que seja acrescentada a ela "valor" atribuido
 		 */
 		System.out.println("Dê uma nota para nosso sistema:");
-        System.out.println("(1)Péssimo ");
-        System.out.println("(2) ");
-        System.out.println("(3) ");
-        nota = scanner.nextInt();
-		
+		System.out.println("(1) Péssimo ");
+		System.out.println("(2) Precisa melhorar ");
+		System.out.println("(3) Bom ");
+		System.out.println("(4) Excelente ");
+
+		nota = scanner.nextInt();
+		/*
+		 * Na linha 147 evocamos a variavel nota para que possamos a partir da classe
+		 * scanner, possamos atribuir um valor a essa variavel
+		 */
 		switch (nota) {
-         case 1:
-             System.out.println("");
-             break;
-         case 2:
-             System.out.println("");
-             break;
-         case 3:
-             System.out.println("");
-             break;
-     }
-		
-		System.out.println(nomeCliente + "-" + "Você gastou R$:" + total);
+		case 1:
+			System.out.println("Que pena, nos tentaremos fazer melhor");
+			break;
+		case 2:
+			System.out.println("Obrigado, tentaremos melhorar");
+			break;
+		case 3:
+			System.out.println("Que bom, que gostou !");
+			break;
+		case 4:
+			System.out.println("Ficamos felizes que tenha gostado !");
+			break;
+		default:
+			System.out.println("Erro: Opção inválida.");
+			return;
+		/*
+		 * Na linha 152 criamos a condicional switch, que possibilita a criação de
+		 * infinitos "casos" de maneira mais para que o sistema imprima as notas de
+		 * acordo com o caso escolhido pelo cliente
+		 */
+		}
+
+		System.out.println(nomeCliente + " - " + "Você gastou R$:" + total);
 		System.exit(0);
 		/*
 		 * Finalizamos o codigo mostrando o "nomeCliente" e "total" que foi somado
