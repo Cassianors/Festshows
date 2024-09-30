@@ -111,8 +111,9 @@ public class Lojavirtual {
 		System.out.println("Escolha qual Bebida: ");
 		System.out.println("(1)Whisky e Redbull - R$:12,00 ");
 		System.out.println("(2)Cerverja latão - R$:7,00 ");
-		System.out.println("(3)Agua 250ml - R$:3,25 ");
-		System.out.println("(4)Não Quero - R$:0,00 ");
+		System.out.println("(3)Coca-cola Lata - R$:5,00 ");
+		System.out.println("(4)Agua 250ml - R$:3,25 ");
+		System.out.println("(5)Não Quero - R$:0,00 ");
 
 		escolhaBebida = scanner.nextInt();
 		/*
@@ -126,9 +127,13 @@ public class Lojavirtual {
 			System.out.println("Você escolheu Cerveja Latão R$:7,00");
 			total += 7.00;
 		} else if (escolhaBebida == 3) {
+			System.out.println("Você escolheu Coca-cola Lata - R$:5,00");
+			total += 5.00;
+		}else if (escolhaBebida == 4) {
 			System.out.println("Você escolheu Agua 250ml R$:3,25");
 			total += 3.25;
-		} else if (escolhaBebida == 4) {
+		} 
+		else if (escolhaBebida == 5) {
 			System.out.println("Você não quer beber.");
 			total += 0.0;
 		} else {
