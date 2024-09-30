@@ -139,8 +139,9 @@ public class Lojavirtual {
 		} else {
 			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 5.");
 		}
+		System.out.println(nomeCliente + " - " + "Você gastou R$:" + total);
 		/*
-		 * Nas linhas 123 a 137 foi criado uma condição if/else/if/else para que possamos
+		 * Nas linhas 123 a 141 foi criado uma condição if/else/if/else para que possamos
 		 * trabalhar com mais opções de condição e ao final evocamos a variavel "total"
 		 * para que seja acrescentada a ela "valor" atribuido
 		 */
@@ -149,7 +150,7 @@ public class Lojavirtual {
 		System.out.println("(2) Precisa melhorar ");
 		System.out.println("(3) Bom ");
 		System.out.println("(4) Excelente ");
-
+		
 		nota = scanner.nextInt();
 		/*
 		 * Na linha 149 evocamos a variavel nota para que possamos a partir da classe
@@ -172,18 +173,13 @@ public class Lojavirtual {
 			System.out.println("Erro: Opção inválida.");
 			return;
 		/*
-		 * Nas linhas 154 a 169 criamos a condicional switch, que possibilita a criação de
+		 * Nas linhas 159 a 174 criamos a condicional switch, que possibilita a criação de
 		 * infinitos "casos" de maneira mais para que o sistema imprima as notas de
 		 * acordo com o caso escolhido pelo cliente
 		 */
 		}
-
-		System.out.println(nomeCliente + " - " + "Você gastou R$:" + total);
 		System.exit(0);
-		/*
-		 * Finalizamos o codigo mostrando o "nomeCliente" e "total" que foi somado
-		 * durante o processo de inserção
-		 */
+		
 	}
 
 }
