@@ -137,7 +137,7 @@ public class Lojavirtual {
 			System.out.println("Você não quer beber.");
 			total += 0.0;
 		} else {
-			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 4.");
+			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 5.");
 		}
 		/*
 		 * Nas linhas 123 a 137 foi criado uma condição if/else/if/else para que possamos
