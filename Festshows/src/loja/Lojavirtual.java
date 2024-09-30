@@ -111,7 +111,6 @@ public class Lojavirtual {
 		System.out.println("Escolha qual Bebida: ");
 		System.out.println("(1)Whisky e Redbull - R$:12,00 ");
 		System.out.println("(2)Cerverja latão - R$:7,00 ");
-		System.out.println("(2)Coca-cola Lata - R$:5,00 ");
 		System.out.println("(3)Agua 250ml - R$:3,25 ");
 		System.out.println("(4)Não Quero - R$:0,00 ");
 
