@@ -180,5 +180,5 @@ public class Lojavirtual {
 		 * durante o processo de inserção
 		 */
 	}
-
+	
 }
