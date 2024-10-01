@@ -8,44 +8,32 @@ public class Lojavirtual {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		/* Na linha 9 atribuimos um nome para invocarmos a classe Scanner */
-		System.out.println(" Olá, bem vindo(a) ao Festshows. ");
+		   System.out.println( "Olá, bem vindo(a),O Festshows, é uma ferramenta para auxiliar você a escolher de forma rapida e prático Shows e Combos(Comidas/Bebidas).  ");
 
-		System.out.println("Digite caso queira prosseguir digite (1):");
-		String resposta = scanner.nextLine();
+	        System.out.print("Primeiramente, digite seu nome: ");
+	        String nomeCliente = scanner.nextLine();
+
+	        System.out.println("Bem-vindo(a), " + nomeCliente + "!");
+		System.out.println("Caso queira continuar em nossa ferramenta digite(1):");
+		int resposta = scanner.nextInt();
 		/*
 		 * Nas linhas 14 Criamos uma variavel que que ira ser criada ao ser inserido um
 		 * valor, apartir da classe que criamos(Scanner)
 		 */
-		if (resposta.equals("1")) {
+		if (resposta == 1) {
 			System.out.println("Podemos prosseguir, nos vemos no show ! ");
 		} else {
 			System.out.println("Obrigado por acessar Festshows, nos vemos na proxima.");
 			scanner.close();
 			System.exit(0);
 		}
-		/*
-		 * Nas linhas 19 a 25 criamos um condição se/senão para escolher uma resposta do usuario, criando a
-		 * condição de se o usuario quiser acessar ele vai digitar um valor valido(1),
-		 * qualquer valor diferente o sistema reconhecera como invalido e ira sair.
-		 * OBS:Ao usar o Equals nos fazemos uma comparação vamos comparar uma variavel
-		 * declarada e "comparar" a um valor inserido
-		 */
-		System.out.print("Primeiramente digite seu nome:");
-		String nomeCliente = scanner.nextLine();
-		/*
-		 * na linha 34 nós atribuimos o um valor que foi inserido pelo usuario ao
-		 * invocarmos o nome criado para a classe Scanner, atribuindo um valor variavel
-		 * string
-		 */
-		System.out.println("Bem vindo(a), " + nomeCliente + "!");
-
-		System.out.println(" Nos lhe auxiliaremos a escolhe o show, a comida e a sua bebida ! ");
 
 		int escolhaShow = 0;
 		int escolhaComida = 0;
 		int escolhaBebida = 0;
 		int nota = 0;
 		double total = 0;
+		
 
 		/*
 		 * Nas linhas 44 à 48 nós declaramos variaveis e atribuimos valores igual a zero
@@ -131,6 +119,7 @@ public class Lojavirtual {
 			total += 5.00;
 		}else if (escolhaBebida == 4) {
 			System.out.println("Você escolheu Agua 250ml R$:3,25");
+			 
 			total += 3.25;
 		} 
 		else if (escolhaBebida == 5) {
@@ -139,7 +128,7 @@ public class Lojavirtual {
 		} else {
 			System.out.println("Opção inválida! Por favor, escolha um número de 1 a 5.");
 		}
-		System.out.println(nomeCliente + " - " + "Você gastou R$:" + total);
+		System.out.println(nomeCliente + " - " + "O seu repertorio é = " +"Show:" +  escolhaShow + " "  +"Comida:" +  escolhaComida + " " +"Bebida:" + escolhaBebida + " " + " e " + "Você gastou R$:" + total);
 		/*
 		 * Nas linhas 123 a 141 foi criado uma condição if/else/if/else para que possamos
 		 * trabalhar com mais opções de condição e ao final evocamos a variavel "total"
